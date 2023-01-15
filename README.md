@@ -35,6 +35,11 @@ node /path/to/open-stage-control_1.22.0_node
 
 ## Mixer + CUIA template 
 
+![Mixer plus](doc/img/pic-3a.jpg)
+
+![CUIA plus](doc/img/pic-3b.jpg)
+
+
 1. edit mixer.js - change "var zyn_host = '192.XXX.YYY.ZZZ'" to correct address
 2. start osc server by this (on raspberry pi):
 
