@@ -58,3 +58,5 @@ node /path/to/open-stage-control_1.22.0_node
 ## Sooperlooper template
 
 ## Sooperlooper + Mixer + CUIAtemplate
+
+Other details are on [Zynthian discourse](https://discourse.zynthian.org/t/zynthian-osc-cuia-over-open-stage-control-template/7217).
