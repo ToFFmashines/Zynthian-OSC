@@ -14,7 +14,7 @@ node /path/to/open-stage-control_1.22.0_node
 --osc-port 1370
 ```
 
-192.XXX.YYY.ZZZ is adres of your Zynthian
+192.XXX.YYY.ZZZ is address of your Zynthian
 
 ## Mixer template
 
