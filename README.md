@@ -1,20 +1,7 @@
 # Zynthian-OSC
 Tempate for Open Stage Control with controll of Zynthian synt
 
-## CUIA template
-
-![CUIA](doc/img/pic-1.jpg)
-
-Here is only one json file so you can start osc server by this (on raspberry pi):
-
-```
-node /path/to/open-stage-control_1.22.0_node 
--s 192.XXX.YYY.ZZZ:1370
--l /path/to/dir/CUIA/zynthianCUIA.json
---osc-port 1370
-```
-
-192.XXX.YYY.ZZZ is address of your Zynthian
+For current stable version of ZynthianOS oram is fully worked Mixer template only.
 
 ## Mixer template
 
@@ -26,8 +13,23 @@ node /path/to/open-stage-control_1.22.0_node
 ```
 node /path/to/open-stage-control_1.22.0_node 
 -s 192.XXX.YYY.ZZZ:1370
--l /path/to/dir/Mixer/mixer_zynthian.json
+-l /path/to/dir/Mixer/mixer_zynthian_oram.json
 -c /path/to/dir/Mixer/mixer.js`
+--osc-port 1370
+```
+
+192.XXX.YYY.ZZZ is address of your Zynthian
+
+## CUIA template
+
+![CUIA](doc/img/pic-1.jpg)
+
+Here is only one json file so you can start osc server by this (on raspberry pi):
+
+```
+node /path/to/open-stage-control_1.22.0_node 
+-s 192.XXX.YYY.ZZZ:1370
+-l /path/to/dir/CUIA/zynthianCUIA.json
 --osc-port 1370
 ```
 
