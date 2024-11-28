@@ -1,7 +1,7 @@
 # Zynthian-OSC
 Tempate for Open Stage Control with controll of Zynthian synt
 
-For current stable version of ZynthianOS oram is fully worked Mixer template only.
+For current stable version of ZynthianOS oram is fully working Mixer template only.
 
 ## Mixer template
 
