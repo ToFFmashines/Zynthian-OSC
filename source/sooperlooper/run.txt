@@ -1,0 +1,8 @@
+Linux PC
+node /home/patch/patchrouter/openstagecontrol -s 192.168.88.107:9951 -p 8088 -l /home/patch/patchrouter/templates/sooperlooper/sooperlooper.json -c /home/patch/patchrouter/templates/sooperlooper/sooperlooper.js -m -d -n
+
+Zynthian
+node /home/patch/patchrouter/openstagecontrol -s 192.168.88.102:9951 -p 8088 -l /home/patch/patchrouter/templates/sooperlooper/sooperlooper.json -c /home/patch/patchrouter/templates/sooperlooper/sooperlooper.js -m -d -n
+
+Local
+node /home/patch/patchrouter/openstagecontrol -s 127.0.0.1:9951 -p 8088 -l /home/patch/patchrouter/templates/sooperlooper/sooperlooper.json -c /home/patch/patchrouter/templates/sooperlooper/sooperlooper.js -m -d -n

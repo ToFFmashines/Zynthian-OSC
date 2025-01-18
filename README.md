@@ -126,6 +126,6 @@ Replace `192.XXX.YYY.ZZZ` with your Zynthian's IP address.
 
 ## SooperLooper Template  
 
-I have currently paused work on this template. I was able to implement most of the core functions, including those related to individual loops. Unfortunately, in Zynthian, the GUI is not yet completely separate from the SooperLooper server, which has led to some issues that I have not yet resolved.
+I have currently paused work on this template. I was able to implement most of the core functions, including those related to individual loops. Unfortunately, in Zynthian, the GUI is not yet completely separate from the SooperLooper server, which has led to some issues that I have not yet resolved. The work-in-progress version can be found in the `./source/sooperlooper` directory.
 
 For more details, see the discussion on the [Zynthian discourse](https://discourse.zynthian.org/t/zynthian-osc-cuia-over-open-stage-control-template/7217).
