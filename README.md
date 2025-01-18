@@ -1,5 +1,5 @@
 # Zynthian-OSC  
-Template for Open Stage Control with control of the Zynthian synth.
+Template for Open Stage Control with control of the Zynthian synth. With these templates, you can control Zynthian using a mobile device.
 
 ## Prerequisites  
 
@@ -9,7 +9,7 @@ If you want to use templates that send MIDI Control Change and Program Change co
 
 ## Mixer Template  
 
-![Mixer](doc/img/pic-1.jpg)  
+![Mixer](doc/img/pic-1.png)  
 
 Download the files from the `./source/Mixer` directory.
 
@@ -32,7 +32,7 @@ Download the files from the `./source/Mixer` directory.
 
 ## Panel Template  
 
-![Panel](doc/img/pic-2.jpg)  
+![Panel](doc/img/pic-2.png)  
 
 Download the files from the `./source/Panel` directory.
 
@@ -55,8 +55,7 @@ Download the files from the `./source/Panel` directory.
 
 ## Mixer + Panel Template  
 
-![Mixer plus](doc/img/pic-3a.jpg)  
-![Panel plus](doc/img/pic-3b.jpg)  
+This template combines the previous two and allows you to control all Zynthian functions.
 
 Download the files from the `./source/Mixer+Panel` directory.
 
@@ -84,11 +83,13 @@ Download the files from the `./source/Mixer+Panel` directory.
 
 ## Mixer + Panel + MIDI Template  
 
-![Control Change](doc/img/pic-4a.jpg)  
+For easier assignment of Program Change and Control Change signals, I have added two more templates.
+
+![Control Change](doc/img/pic-3.png)  
 
 Choose the Control Change number and MIDI channel, then use the slider to send values.
 
-![Program Change](doc/img/pic-4b.jpg)  
+![Program Change](doc/img/pic-4.png)  
 
 Choose the Program Change number and MIDI channel, then use the button to send the command to the Zynthian.
 
