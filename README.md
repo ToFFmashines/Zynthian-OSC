@@ -23,7 +23,7 @@ Download the files from the `./source/Mixer` directory.
    ```sh
    node /path/to/open-stage-control_1.22.0_node 
    -s 192.XXX.YYY.ZZZ:1370
-   -l /path/to/dir/Mixer/mixer_zynthian.json
+   -l /path/to/dir/Mixer/mixer.json
    -c /path/to/dir/Mixer/mixer.js
    --osc-port 1370
    ```
@@ -46,7 +46,7 @@ Download the files from the `./source/Panel` directory.
    ```sh
    node /path/to/open-stage-control_1.22.0_node 
    -s 192.XXX.YYY.ZZZ:1370
-   -l /path/to/dir/Panel/panel_zynthian.json
+   -l /path/to/dir/Panel/panel.json
    -c /path/to/dir/Panel/panel.js
    --osc-port 1370
    ```
@@ -74,7 +74,7 @@ Download the files from the `./source/Mixer+Panel` directory.
    ```sh
    node /path/to/open-stage-control_1.22.0_node 
    -s 192.XXX.YYY.ZZZ:1370
-   -l /path/to/dir/Mixer+Panel/mixer_panel_zynthian.json
+   -l /path/to/dir/Mixer+Panel/zynthian.json
    -c /path/to/dir/Mixer+Panel/main.js
    --osc-port 1370
    ```
@@ -110,13 +110,13 @@ Download the files from the `./source/All` directory.
    ```sh
    node /path/to/open-stage-control_1.22.0_node 
    -s 192.XXX.YYY.ZZZ:1370
-   -l /path/to/dir/All/mixer_panel_zynthian.json
+   -l /path/to/dir/All/zynthian.json
    -c /path/to/dir/All/main.js
    --osc-port 1370
    -m oscmidi:virtual 
    ```
 
-   The `-m oscmidi:virtual` flag enables MIDI command processing. If Open Stage Control is running on a different computer than the Zynthian, you must link it with **QMidiNet**. For Raspberry Pi, you can use the `aconnect` command to connect the Open Stage Control Server's output port to QMidiNet's input port.
+   The `-m oscmidi:virtual` flag enables MIDI command processing. If Open Stage Control is running on a different computer than the Zynthian, you must link it with **QMidiNet** (or RTP-MIDI). For Raspberry Pi, you can use the `aconnect` command to connect the Open Stage Control Server's output port to QMidiNet's input port.
 
 Replace `192.XXX.YYY.ZZZ` with your Zynthian's IP address.
 
