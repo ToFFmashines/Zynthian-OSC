@@ -1,62 +1,130 @@
-# Zynthian-OSC
-Tempate for Open Stage Control with controll of Zynthian synt
+# Zynthian-OSC  
+Template for Open Stage Control with control of the Zynthian synth.
 
-## CUIA template
+## Prerequisites  
 
-![CUIA](doc/img/pic-1.jpg)
+A functional computer running the Open Stage Control Server – available for download at [Open Stage Control](https://openstagecontrol.ammd.net/download/), where you can also find the installation guide. In my case, the Open Stage Control Server is installed on a Raspberry Pi 4 and launched using Node. The computer must have a working network connection; otherwise, it will not connect to the Zynthian. I have not tested installing the Open Stage Control Server directly on the Zynthian.
 
-Here is only one json file so you can start osc server by this (on raspberry pi):
+If you want to use templates that send MIDI Control Change and Program Change commands, you must have an active MIDI connection between the Zynthian and your computer running the Open Stage Control Server. It is advisable to use tools such as **QMidiNet** or **RTP-MIDI**, as they enable network-based connections. Additionally, the relevant service must be enabled in the Zynthian settings to establish the connection.
 
-```
-node /path/to/open-stage-control_1.22.0_node 
--s 192.XXX.YYY.ZZZ:1370
--l /path/to/dir/CUIA/zynthianCUIA.json
---osc-port 1370
-```
+## Mixer Template  
 
-192.XXX.YYY.ZZZ is address of your Zynthian
+![Mixer](doc/img/pic-1.jpg)  
 
-## Mixer template
+Download the files from the `./source/Mixer` directory.
 
-![Mixer](doc/img/pic-2.jpg)
+1. Edit `mixer.js` – change  
+   ```js
+   var zyn_host = '192.168.88.102'
+   ```
+   to the correct address of your Zynthian.
+2. Start the OSC server using the following command (on Raspberry Pi):
 
-1. edit mixer.js - change "var zyn_host = '192.168.88.102'" to correct address
-2. start osc server by this (on raspberry pi):
+   ```sh
+   node /path/to/open-stage-control_1.22.0_node 
+   -s 192.XXX.YYY.ZZZ:1370
+   -l /path/to/dir/Mixer/mixer_zynthian.json
+   -c /path/to/dir/Mixer/mixer.js
+   --osc-port 1370
+   ```
+   
+   Replace `192.XXX.YYY.ZZZ` with your Zynthian's IP address.
 
-```
-node /path/to/open-stage-control_1.22.0_node 
--s 192.XXX.YYY.ZZZ:1370
--l /path/to/dir/Mixer/mixer_zynthian.json
--c /path/to/dir/Mixer/mixer.js`
---osc-port 1370
-```
+## Panel Template  
 
-192.XXX.YYY.ZZZ is address of your Zynthian
+![Panel](doc/img/pic-2.jpg)  
 
-## Mixer + CUIA template 
+Download the files from the `./source/Panel` directory.
 
-![Mixer plus](doc/img/pic-3a.jpg)
+1. Edit `panel.js` – change  
+   ```js
+   var sw_zyn_host = '192.168.88.102'
+   ```
+   to the correct address of your Zynthian.
+2. Start the OSC server using the following command (on Raspberry Pi):
 
-![CUIA plus](doc/img/pic-3b.jpg)
+   ```sh
+   node /path/to/open-stage-control_1.22.0_node 
+   -s 192.XXX.YYY.ZZZ:1370
+   -l /path/to/dir/Panel/panel_zynthian.json
+   -c /path/to/dir/Panel/panel.js
+   --osc-port 1370
+   ```
 
+   Replace `192.XXX.YYY.ZZZ` with your Zynthian's IP address.
 
-1. edit mixer.js - change "var zyn_host = '192.168.88.102'" to correct address
-2. start osc server by this (on raspberry pi):
+## Mixer + Panel Template  
 
-```
-node /path/to/open-stage-control_1.22.0_node 
--s 192.XXX.YYY.ZZZ:1370
--l /path/to/dir/Mixer+CUIA/mixer_CUIA_zynthian.json
--c /path/to/dir/Mixer+CUIA/mixer.js`
---osc-port 1370
-```
+![Mixer plus](doc/img/pic-3a.jpg)  
+![Panel plus](doc/img/pic-3b.jpg)  
 
-192.XXX.YYY.ZZZ is address of your Zynthian
+Download the files from the `./source/Mixer+Panel` directory.
 
-# To-Do
+1. Edit `mixer.js` – change  
+   ```js
+   var zyn_host = '192.168.88.102'
+   ```
+   to the correct address of your Zynthian.
+2. Edit `panel.js` – change  
+   ```js
+   var sw_zyn_host = '192.168.88.102'
+   ```
+   to the correct address of your Zynthian.
+3. Start the OSC server using the following command (on Raspberry Pi):
 
-## Sooperlooper template
+   ```sh
+   node /path/to/open-stage-control_1.22.0_node 
+   -s 192.XXX.YYY.ZZZ:1370
+   -l /path/to/dir/Mixer+Panel/mixer_panel_zynthian.json
+   -c /path/to/dir/Mixer+Panel/main.js
+   --osc-port 1370
+   ```
 
-## Sooperlooper + Mixer + CUIAtemplate
+   Replace `192.XXX.YYY.ZZZ` with your Zynthian's IP address.
 
-Other details are on [Zynthian discourse](https://discourse.zynthian.org/t/zynthian-osc-cuia-over-open-stage-control-template/7217).
+## Mixer + Panel + MIDI Template  
+
+![Control Change](doc/img/pic-4a.jpg)  
+
+Choose the Control Change number and MIDI channel, then use the slider to send values.
+
+![Program Change](doc/img/pic-4b.jpg)  
+
+Choose the Program Change number and MIDI channel, then use the button to send the command to the Zynthian.
+
+Download the files from the `./source/All` directory.
+
+1. Edit `mixer.js` – change  
+   ```js
+   var zyn_host = '192.168.88.102'
+   ```
+   to the correct address of your Zynthian.
+2. Edit `panel.js` – change  
+   ```js
+   var sw_zyn_host = '192.168.88.102'
+   ```
+   to the correct address of your Zynthian.
+3. Start the OSC server using the following command (on Raspberry Pi):
+
+   ```sh
+   node /path/to/open-stage-control_1.22.0_node 
+   -s 192.XXX.YYY.ZZZ:1370
+   -l /path/to/dir/All/mixer_panel_zynthian.json
+   -c /path/to/dir/All/main.js
+   --osc-port 1370
+   -m oscmidi:virtual 
+   ```
+
+   The `-m oscmidi:virtual` flag enables MIDI command processing. If Open Stage Control is running on a different computer than the Zynthian, you must link it with **QMidiNet**. For Raspberry Pi, you can use the `aconnect` command to connect the Open Stage Control Server's output port to QMidiNet's input port.
+
+Replace `192.XXX.YYY.ZZZ` with your Zynthian's IP address.
+
+---
+
+# To-Do  
+
+## SooperLooper Template  
+
+I have currently paused work on this template. I was able to implement most of the core functions, including those related to individual loops. Unfortunately, in Zynthian, the GUI is not yet completely separate from the SooperLooper server, which has led to some issues that I have not yet resolved.
+
+For more details, see the discussion on the [Zynthian discourse](https://discourse.zynthian.org/t/zynthian-osc-cuia-over-open-stage-control-template/7217).

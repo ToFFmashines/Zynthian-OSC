@@ -1,0 +1,173 @@
+[
+   {
+      "Switch":1,
+      "Short":"/CUIA/MENU",
+      "Bold":"/CUIA/SCREEN_ADMIN",
+      "Long":"/CUIA/POWER OFF",
+      "AltShort":"/CUIA/MENU",
+      "AltBold":"/CUIA/SCREEN_ADMIN",
+      "AltLong":"/CUIA/POWER OFF"
+   },
+   {
+      "Switch":2,
+      "Short":"/CUIA/SCREEN_AUDIO_MIXER",
+      "Bold":"/CUIA/SCREEN_ALSA_MIXER",
+      "Long":"/CUIA/ALL_SOUNDS_OFF",
+      "AltShort":"/CUIA/SCREEN_AUDIO_MIXER",
+      "AltBold":"/CUIA/SCREEN_ALSA_MIXER",
+      "AltLong":"/CUIA/ALL_SOUNDS_OFF"
+   },
+   {
+      "Switch":3,
+      "Short":"/CUIA/CHAIN_CONTROL",
+      "Bold":"/CUIA/PRESET",
+      "Long":"/CUIA/PRESET_FAV",
+      "AltShort":"/CUIA/CHAIN_CONTROL",
+      "AltBold":"/CUIA/BANK_PRESET",
+      "AltLong":"/CUIA/PRESET_FAV"
+   },
+   {
+      "Switch":4,
+      "Short":"/CUIA/SCREEN_ZS3",
+      "Bold":"/CUIA/SCREEN_SNAPSHOT",
+      "Long":"",
+      "AltShort":"/CUIA/SCREEN_ZS3",
+      "AltBold":"/CUIA/SCREEN_SNAPSHOT",
+      "AltLong":""
+   },
+   {
+      "Switch":5,
+      "Short":"/CUIA/TOGGLE_ALT_MODE",
+      "Bold":"/CUIA/HELP",
+      "Long":"",
+      "AltShort":"/CUIA/TOGGLE_ALT_MODE",
+      "AltBold":"/CUIA/HELP",
+      "AltLong":""
+   },
+   {
+      "Switch":6,
+      "Short":"/CUIA/TEMPO",
+      "Bold":"",
+      "Long":"",
+      "AltShort":"/CUIA/TEMPO",
+      "AltBold":"",
+      "AltLong":""
+   },
+   {
+      "Switch":7,
+      "Short":"/CUIA/SCREEN_ZYNPAD",
+      "Bold":"/CUIA/SCREEN_PATTERN_EDITOR",
+      "Long":"/CUIA/SCREEN_ARRANGER",
+      "AltShort":"/CUIA/SCREEN_ZYNPAD",
+      "AltBold":"/CUIA/SCREEN_PATTERN_EDITOR",
+      "AltLong":"/CUIA/SCREEN_ARRANGER"
+   },
+   {
+      "Switch":8,
+      "Short":"/CUIA/PROGRAM_CHANGE 1",
+      "Bold":"/CUIA/PROGRAM_CHANGE 1",
+      "Long":"",
+      "AltShort":"/CUIA/PROGRAM_CHANGE 5",
+      "AltBold":"/CUIA/PROGRAM_CHANGE 5",
+      "AltLong":""
+   },
+   {
+      "Switch":9,
+      "Short":"/CUIA/TOGGLE_AUDIO_RECORD",
+      "Bold":"/CUIA/TOGGLE_AUDIO_RECORD",
+      "Long":"",
+      "AltShort":"/CUIA/TOGGLE_MIDI_RECORD",
+      "AltBold":"/CUIA/TOGGLE_MIDI_RECORD",
+      "AltLong":""
+   },
+   {
+      "Switch":10,
+      "Short":"/CUIA/STOP",
+      "Bold":"/CUIA/ALL_NOTES_OFF",
+      "Long":"/CUIA/ALL_SOUNDS_OFF",
+      "AltShort":"/CUIA/STOP",
+      "AltBold":"/CUIA/ALL_NOTES_OFF",
+      "AltLong":"/CUIA/ALL_SOUNDS_OFF"
+   },
+   {
+      "Switch":11,
+      "Short":"/CUIA/TOGGLE_AUDIO_PLAY",
+      "Bold":"/CUIA/AUDIO_FILE_LIST",
+      "Long":"",
+      "AltShort":"/CUIA/TOGGLE_MIDI_PLAY",
+      "AltBold":"/CUIA/SCREEN_MIDI_RECORDER",
+      "AltLong":""
+   },
+   {
+      "Switch":12,
+      "Short":"/CUIA/PROGRAM_CHANGE 2",
+      "Bold":"/CUIA/PROGRAM_CHANGE 2",
+      "Long":"",
+      "AltShort":"/CUIA/PROGRAM_CHANGE 6",
+      "AltBold":"/CUIA/PROGRAM_CHANGE 6",
+      "AltLong":""
+   },
+   {
+      "Switch":15,
+      "Short":"/CUIA/ZYNSWITCH 3,S",
+      "Bold":"/CUIA/ZYNSWITCH 3,B",
+      "Long":"",
+      "AltShort":"/CUIA/ZYNSWITCH 3,S",
+      "AltBold":"/CUIA/ZYNSWITCH 3,B",
+      "AltLong":""
+   },
+   {
+      "Switch":16,
+      "Short":"/CUIA/PROGRAM_CHANGE 3",
+      "Bold":"/CUIA/PROGRAM_CHANGE 3",
+      "Long":"",
+      "AltShort":"/CUIA/PROGRAM_CHANGE 7",
+      "AltBold":"/CUIA/PROGRAM_CHANGE 7",
+      "AltLong":""
+   },
+   {
+      "Switch":20,
+      "Short":"/CUIA/PROGRAM_CHANGE 4",
+      "Bold":"/CUIA/PROGRAM_CHANGE 4",
+      "Long":"",
+      "AltShort":"/CUIA/PROGRAM_CHANGE 8",
+      "AltBold":"/CUIA/PROGRAM_CHANGE 8",
+      "AltLong":""
+   },
+   {
+      "Switch":21,
+      "Short":"/CUIA/V5_ZYNPOT_SWITCH 0,S",
+      "Bold":"/CUIA/V5_ZYNPOT_SWITCH 0,B",
+      "Long":"/CUIA/V5_ZYNPOT_SWITCH 0,L",
+      "AltShort":"/CUIA/V5_ZYNPOT_SWITCH 0,S",
+      "AltBold":"/CUIA/V5_ZYNPOT_SWITCH 0,B",
+      "AltLong":"/CUIA/V5_ZYNPOT_SWITCH 0,L"
+   },
+   {
+      "Switch":22,
+      "Short":"/CUIA/V5_ZYNPOT_SWITCH 1,S",
+      "Bold":"/CUIA/V5_ZYNPOT_SWITCH 1,B",
+      "Long":"/CUIA/V5_ZYNPOT_SWITCH 1,L",
+      "AltShort":"/CUIA/V5_ZYNPOT_SWITCH 1,S",
+      "AltBold":"/CUIA/V5_ZYNPOT_SWITCH 1,B",
+      "AltLong":"/CUIA/V5_ZYNPOT_SWITCH 1,L"
+   },
+   {
+      "Switch":23,
+      "Short":"/CUIA/V5_ZYNPOT_SWITCH 2,S",
+      "Bold":"/CUIA/V5_ZYNPOT_SWITCH 2,B",
+      "Long":"/CUIA/V5_ZYNPOT_SWITCH 2,L",
+      "AltShort":"/CUIA/V5_ZYNPOT_SWITCH 2,S",
+      "AltBold":"/CUIA/V5_ZYNPOT_SWITCH 2,B",
+      "AltLong":"/CUIA/V5_ZYNPOT_SWITCH 2,L"
+   },
+   {
+      "Switch":24,
+      "Short":"/CUIA/V5_ZYNPOT_SWITCH 3,S",
+      "Bold":"/CUIA/V5_ZYNPOT_SWITCH 3,B",
+      "Long":"/CUIA/V5_ZYNPOT_SWITCH 3,L",
+      "AltShort":"/CUIA/V5_ZYNPOT_SWITCH 3,S",
+      "AltBold":"/CUIA/V5_ZYNPOT_SWITCH 3,B",
+      "AltLong":"/CUIA/V5_ZYNPOT_SWITCH 3,L"
+   }
+]
